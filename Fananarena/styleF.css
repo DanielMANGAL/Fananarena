@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+body{
+    margin: 2%;
+   
+}
+
+nav{
+  
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width:210px;
+   
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    border-radius: 3px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+    color: white;
+    background-color: rgb(236, 136, 20);
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    background-color:rgb(252, 187, 113);
+    box-shadow: 2px 5px rgb(236, 136, 20);
+    border-radius: 3px;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+    color: white;
+    background-color: rgb(236, 136, 20);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+
+#Titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #FFFF6B;
+}
+
+.conteneur {
+    width: 100%;
+}
+
+#t2{
+    color:goldenrod;
+}
+table, th, td {
+    border: 2px solid rgb(243, 162, 10);
+    padding: 6px;
+  }
+h1:hover{
+    color:rgb(243, 162, 10);
+
+  }
+.T1{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+#t2{
+    fontsize: 80 px;
+    text-align: center;
+
+
+}
+.logo1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgAc{
+    display: flex;
+    flex-direction: center;
+}
+
+.classe{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 75%;
+    background-color: goldenrod;
+}
+
+
+.description{
+    font-size: large;
+    font-style: italic;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 75%;
+
+}
+.tete{
+    display: flex;
+    flex-direction: row;
+}
+
+.tet2{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 35%;
+    color:rgb(243, 162, 10);
+    
+}
+
+.classeUp{
+    animation-name: presentation;
+    animation-duration: 6s;
+}
+
+@keyframes presentation{
+    0%{ background-color:#0e7a0e;}
+ 
+
+}
